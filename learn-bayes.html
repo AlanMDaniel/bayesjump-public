@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <head>
+    <!-- Include Meta Tags Here -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1 user-scalable=no, shrink-to-fit=no">
+<meta content='#000000' name='theme-color'/>
+<meta name="keywords" content="Bayesian, Statistics, Resources, Lesson Plans, Learn Bayes">
+<title>BayesJump | Learn Bayes</title>
+
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+<meta name="og:title" content="BayesJump | Learn Bayes">
+<meta name="og:description" content="Take the leap into Bayesian statistics.">
+<meta name="og:image" content="/BayesJump/assets/images/">
+<meta name="og:image:alt" content="BayesJump | Learn Bayes">
+<meta name="og:url" content="https://www.bayesjump.org/learn-bayes">
+<meta name="article:author" content="https://www.facebook.com/thedevslot">
+<meta name="og:site_name" content="BayesJump | Learn Bayes">
+<meta name="og:type" content="website">
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="BayesJump | Learn Bayes">
+<meta name="twitter:description" content="Take the leap into Bayesian statistics.">
+<meta name="twitter:site" content="@thedevslot">
+<meta name="twitter:creator" content="@thedevslot">
+<meta name="twitter:image:src" content="/BayesJump/assets/images/">
+<!-- Search Engine -->
+<meta name="description" content="Take the leap into Bayesian statistics.">
+<meta name="image" content="/BayesJump/assets/images/">
+<!-- Schema.org for Google -->
+<meta itemprop="name" content="BayesJump | Learn Bayes">
+<meta name="author" content="Welcome to BayesJump"/>
+<meta itemprop="description" content="Take the leap into Bayesian statistics.">
+<meta itemprop="image" content="/BayesJump/assets/images/">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', '');
+</script>
+    <title>BayesJump</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/6a97161b76.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://www.bayesjump.org/assets/images/logo.png" type="image/x-icon">
+</head>
+<style>
+  /* Ensure all project pages have normal margins */
+  .project-content {
+    margin-top: 5rem; /* pushes content below navbar */
+    padding: 2rem 1rem;
+  }
+
+  .project-content .container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  /* Better spacing and color for Markdown content */
+  .project-content h1, 
+  .project-content h2, 
+  .project-content h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #000; /* make sure headings are solid black */
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .project-content h1 {
+    font-size: 2.25rem; /* large and clear main title */
+  }
+
+  .project-content p {
+    margin-bottom: 1.25rem; /* space between paragraphs */
+    line-height: 1.7;
+    color: #222;
+  }
+
+  /* Optional: add subtle spacing between list items */
+  .project-content li {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Restore bullet and number styles for Markdown lists */
+.project-content ul,
+.project-content ol {
+  margin-left: 1.5rem; /* indent lists slightly */
+  padding-left: 1.5rem;
+  list-style-position: outside;
+}
+
+.project-content ul {
+  list-style-type: disc; /* solid bullets */
+}
+
+.project-content ol {
+  list-style-type: decimal; /* numbered lists */
+}
+
+.project-content li {
+  margin-bottom: 0.5rem;
+}
+</style>
+</head>
+
+<body>
+  <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation" id="navbar">
+    <div class="container">
+
+        <!-- logo or branding image on left side -->
+        <div class="navbar-brand">
+            <a class="navbar-item"
+                href="https://www.bayesjump.org/">
+                <strong>BayesJump</strong>
+            </a>
+            <div class="navbar-burger" data-target="navbar-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
+        <div class="navbar-menu has-background-black" id="navbar-menu">
+            <!-- navbar items | left side -->
+            <!-- <div class="navbar-start">
+            </div> -->
+            <!-- navbar items | right side -->
+            <div class="navbar-end">
+    <a class="navbar-item" href="/">Home</a>
+    <a class="navbar-item" href="/learn-bayes/">Learn Bayes</a>
+    <a class="navbar-item" href="/teach-bayes/">Teach Bayes</a>
+    <a class="navbar-item" href="/resource-library/">Resource Library</a>
+    <a class="navbar-item" href="/contribute/">Contribute</a>
+</div>
+
+        </div>
+    </div>
+</nav>
+<!-- Bulma Navbar JS -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        /* Get all "navbar-burger" elements */
+        var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        /* Check if there are any navbar burgers */
+        if ($navbarBurgers.length > 0) {
+            /* Add a click event on each of them */
+            $navbarBurgers.forEach(function ($el) {
+                $el.addEventListener('click', function () {
+                    /* Get the target from the "data-target" attribute */
+                    var target = $el.dataset.target;
+                    var $target = document.getElementById(target);
+                    /* Toggle the class on both the "navbar-burger" and the "navbar-menu" */
+                    $el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                });
+            });
+        }
+    });
+</script>
+
+  <!-- Main Page Content -->
+  <section class="section project-content">
+    <div class="container">
+      <h1 id="learn-bayesian-statistics-build-your-confidence-empower-your-students"><span style="font-size:3rem; color:#000;">Learn Bayesian Statistics: Build Your Confidence, Empower Your Students</span></h1>
+
+<p>Welcome! You’re here because you’re ready to explore a powerful, intuitive approach to statistics that will enrich your teaching and equip your students with cutting-edge tools. At BayesJump, we understand that stepping into Bayesian statistics can feel like a big leap, especially if it wasn’t part of your own education. <strong>This page is your dedicated starting point.</strong></p>
+
+<p>Our mission is simple: <strong>to build your confidence.</strong> We believe every instructor can integrate Bayesian thinking into their courses, no matter their current background. Consider us your supportive guide as you embark on this learning journey.</p>
+
+<hr />
+
+<h2 id="your-roadmap-to-bayesian-confidence">Your Roadmap to Bayesian Confidence</h2>
+
+<p>We’ve distilled the essentials into a clear, manageable path. You don’t need to become a Bayesian expert overnight; just understand the core ideas well enough to introduce them effectively.</p>
+
+<p><em>Here’s what you’ll master:</em></p>
+
+<section class="learning-flow"> 
+  <div class="flow-container">
+    <div class="flow-step fade-in">
+      <div class="circle">7</div>
+      <h3>Key Terms</h3>
+      <p>Learn foundational language and ideas you’ll need to "speak Bayes."</p>
+    </div>
+
+    <!---<div class="arrow fade-in delay-1">➜</div>-->
+
+    <div class="flow-step fade-in delay-2">
+      <div class="circle">5</div>
+      <h3>Core Concepts</h3>
+      <p>Understand the conceptual framework that underlies the Bayesian approach.</p>
+    </div>
+
+    <!---<div class="arrow fade-in delay-3">➜</div>-->
+
+    <div class="flow-step fade-in delay-4">
+      <div class="circle">4</div>
+      <h3>Training Modules</h3>
+      <p>We've broken these concepts into four short training modules to help scaffold your understanding.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+/* -------- Layout -------- */
+.learning-flow {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto;
+  text-align: center;
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+.flow-container {
+  display: flex;
+  align-items: flex-start; /* align tops of cards */
+  gap: 2rem;
+  flex-wrap: wrap; 
+  justify-content: center;
+  position: relative;
+}
+
+/* -------- Step Cards -------- */
+.flow-step {
+  background: var(--background-secondary, #f8f9fa);
+  border-radius: 1rem;
+  padding: 2rem 1rem 1.5rem;
+  min-width: 180px;
+  max-width: 260px;
+  flex: 1 1 220px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.flow-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+/* -------- Number Circles -------- */
+.circle {
+  width: 70px;
+  height: 70px;
+  background: var(--accent-color, #007bff);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0 auto 1rem auto;
+  z-index: 1;
+  position: relative;
+}
+
+/* -------- Connecting Lines -------- */
+.flow-container::before {
+  content: "";
+  position: absolute;
+  top: 40px; /* align roughly with circle centers */
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background-color: rgba(0,0,0,0.1);
+  z-index: 0;
+}
+
+/* -------- Titles -------- */
+.flow-step h3 {
+  color: var(--accent-color, #007bff);
+  margin-bottom: 0.5rem;
+}
+
+/* -------- Arrows -------- */
+.arrow {
+  font-size: 2rem;
+  color: var(--text-muted, #888);
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 900px) {
+  .flow-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .arrow {
+    display: none; /* hide arrows on narrow screens */
+  }
+  .flow-container::before {
+    display: none; /* remove connecting line on small screens */
+  }
+}
+
+/* -------- Fade-in Animation -------- */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+
+.fade-in { visibility: hidden; }
+.fade-in.is-visible { visibility: visible; opacity: 1; }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".fade-in");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  items.forEach(item => observer.observe(item));
+});
+</script>
+
+<p>We’ve broken down your learning journey into <strong>four short, focused training modules.</strong> These modules will walk you through the fundamental vocabulary and concepts, preparing you to discuss Bayesian ideas with clarity and enthusiasm.</p>
+
+<hr />
+
+<h2 id="what-youll-achieve">What You’ll Achieve</h2>
+
+<p><em>By completing these modules, you will gain:</em></p>
+
+<ul>
+  <li><strong>Clarity on Key Bayesian Terms:</strong> Understand the essential language like Prior, Posterior, Likelihood, Bayes Factor, and Credible Intervals.</li>
+  <li><strong>A Grasp of Core Concepts:</strong> Confidently explain how Bayesian methods update beliefs, address limitations of frequentist approaches, and align with intuitive human reasoning.</li>
+  <li><strong>Practical Teaching Strategies:</strong> Discover engaging analogies and examples to make Bayesian concepts accessible and exciting for your students.</li>
+</ul>
+
+<hr />
+
+<h2 id="ready-to-start">Ready to Start?</h2>
+
+<p><em>Your journey to teaching Bayesian statistics begins here.</em> Click on <strong>Module 1</strong> to dive in!</p>
+
+<div class="project-card-container">
+  <a href="module1.html" class="project-card" style="background-image: url('/assets/images/module1-bg.jpg');">
+    <div class="project-card-content">
+      <h3>Module 1: Introduction</h3>
+      <p>How Bayes is different from other hypothesis tests and an overview of the conceptual basis.</p>
+    </div>
+  </a>
+
+  <a href="module2.html" class="project-card" style="background-image: url('/assets/images/module2-bg.jpg');">
+    <div class="project-card-content">
+      <h3>Module 2: Core Concepts</h3>
+      <p>The fundamentals of Bayesian logic; learn key terms to "speak Bayes."</p>
+    </div>
+  </a>
+
+  <a href="module3.html" class="project-card" style="background-image: url('/assets/images/module3-bg.jpg');">
+    <div class="project-card-content">
+      <h3>Module 3: Theory to Application</h3>
+      <p>How to conduct a Bayesian statistical test and interpret the results, A step-by-step guide.</p>
+    </div>
+  </a>
+
+  <a href="module4.html" class="project-card" style="background-image: url('/assets/images/module4-bg.jpg');">
+    <div class="project-card-content">
+      <h3>Module 4: Bayes is Everywhere</h3>
+      <p>How Bayesian ideas shape our understanding in the life sciences and in our daily lives.</p>
+    </div>
+  </a>
+</div>
+
+<style>
+/* -------- Container -------- */
+.project-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: stretch; /* equal height for cards in row */
+  margin-top: 2rem;
+}
+
+/* -------- Individual Cards -------- */
+.project-card {
+  flex: 1 1 250px;
+  max-width: 300px;
+  min-height: 250px;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  position: relative; /* for overlay positioning */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+}
+
+/* -------- Overlay Content -------- */
+.project-card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* full overlay */
+  background: rgba(0,0,0,0.45);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* text at bottom */
+  border-radius: 1rem;
+  color: #fff !important; /* enforce white text */
+}
+
+.project-card-content h3,
+.project-card-content p {
+  color: #fff !important;
+  margin: 0;
+}
+
+.project-card-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card-content p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* -------- Hover Effect -------- */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+/* -------- Fade-in Animation -------- */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+
+.fade-in.is-visible { opacity: 1; }
+
+/* -------- Responsive -------- */
+@media (max-width: 768px) {
+  .project-card-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .project-card {
+    max-width: 90%;
+    min-height: 200px;
+  }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".fade-in");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  items.forEach(item => observer.observe(item));
+});
+</script>
+
+<hr />
+
+<h2 id="beyond-the-modules-continued-support">Beyond the Modules: Continued Support</h2>
+
+<p>Once you’ve completed the core training, we haven’t left you hanging. You’ll also find:</p>
+
+<ul>
+  <li><strong>Student FAQ Guide:</strong> A curated list of common student questions about Bayesian statistics, along with clear, concise answers to help you navigate classroom discussions.</li>
+  <li><strong>Suggested Further Resources:</strong> Recommendations for books, articles, and online courses if you wish to deepen your own Bayesian expertise.</li>
+</ul>
+
+<hr />
+
+<h2 id="a-note-on-your-teaching-journey">A Note on Your Teaching Journey</h2>
+
+<p>As instructors, we are lifelong learners. It’s perfectly okay – and often incredibly empowering for students – to share your own learning journey. You might say something like:</p>
+
+<blockquote>
+  <p>“I wasn’t taught these concepts when I was a student, but I believe they’re incredibly valuable. We’re going to explore them together, and I’m excited for us to learn this powerful new way of thinking.”</p>
+</blockquote>
+
+<p>Your authenticity will foster an engaging and open learning environment.</p>
+
+    </div>
+  </section>
+
+ 
+
+  <footer id="footer">
+    <!--Footer Button-->
+    <div class="container has-text-centered has-background-grey-darker" id="backtotop">
+        <a class="has-text-white" onclick="window.scroll(0,0)">BACK TO TOP</a>
+    </div>
+    <!--Footer Main Section-->
+    <div class="has-background-grey-darker">
+        <div class="container columns">
+            <!--Name Section-->
+            <div class="column has-text-left-desktop has-text-centered-mobile">
+                <a href="https://www.bayesjump.org/#about">
+                    <div class="columns">
+                        <div class="column is-one-fifth-desktop is-one-fifth-fullhd is-one-quarter-tablet">
+                            <figure class="image is-64x64">
+                                <img class="is-rounded" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png">
+                            </figure>
+                        </div>
+                        <div class="column is-marginless">
+                            <h5 class="has-text-grey-lighter">Welcome to BayesJump</h5>
+                            <div class="content has-text-grey">
+                                <p>Take the <i>leap</i> into Bayesian statistics.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!--Link Section-->
+            <div class="column has-text-white">
+                <h3>More Links</h3>
+                
+                
+                <li>
+                    <a href="https://www.bayesjump.org/resource-library">Resource Library</a>
+                </li>
+                
+                
+                
+                <li>
+                    <a href="https://www.bayesjump.org/teach-bayes">Teach Bayes</a>
+                </li>
+                
+                
+                
+            </div>
+
+            <!--Support Section-->
+            <div class="column has-text-white">
+                <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Us', '#72a4f2', 'S6S0J5TEJ');kofiwidget2.draw();</script> 
+            </div>
+        </div>
+    </div>
+    <div class="has-background-black has-text-centered has-text-white" id="credits">
+        <i class="far fa-copyright"></i> 2025 | <a href="https://github.com/thedevslot/WhatATheme" target="_blank" rel="noopener noreferrer">WhatATheme</a> - A Theme made with <i class="fas fa-heart has-text-danger"></i> by <a href="https://www.twitter.com/thedevslot" target="_blank" rel="noopener noreferrer">TheDevsLot</a> Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+    </div>
+</footer>
+</body>
+</html>

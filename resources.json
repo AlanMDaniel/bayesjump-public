@@ -1,0 +1,163 @@
+[
+  
+  {
+    "title": "A First Course in Bayesian Statistical Methods",
+    "content": "Compact graduate-level introduction with examples in R; useful for advanced users.",
+    "url": "/resources/a-first-course-in-bayesian-statistical-methods",
+    "image": "/assets/images/placeholder.png",
+    "date": "2025-10-05"
+  },
+  
+  {
+    "title": "A Practical Introduction to Bayesian Estimation of Causal Effects",
+    "content": "Combines Bayesian modeling and causal inference, with open code examples.",
+    "url": "/resources/a-practical-introduction-to-bayesian-estimation-of-causal-effects",
+    "image": "/assets/images/placeholder.png",
+    "date": "2025-10-05"
+  },
+  
+  {
+    "title": "An Introduction to Bayesian Thinking",
+    "content": "Short, freely available online text suitable for early introduction to Bayesian concepts.",
+    "url": "/resources/an-introduction-to-bayesian-thinking",
+    "image": "/assets/images/placeholder.png",
+    "date": "2025-10-05"
+  },
+  
+  {
+    "title": "ArviZ",
+    "content": "Diagnostics, visualization, and utilities for analyzing Bayesian model output from PyMC, Stan, etc.",
+    "url": "/resources/arviz",
+    "image": "/assets/images/placeholder.png",
+    "date": "2025-10-05"
+  },
+  
+  {
+    "title": "Bambi",
+    "content": "High-level formula interface for Bayesian regression and multilevel models, built on PyMC.",
+    "url": "/resources/bambi",
+    "image": "/assets/images/placeholder.png",
+    "date": "2025-10-05"
+  },
+  
+  {
+    "title": "bayes4psy",
+    "content": "Teaching-oriented Bayesian models for psychology (t-test, bootstrapping, reaction time models).",
+    "url": "/resources/bayes4psy",
+    "image": "/assets/images/placeholder.png",
+    "date": "2025-10-05"
+  },
+  
+  {
+    "title": "Bayesian Composite Models in Chemistry",
+    "content": "Demonstrates composite Bayesian modeling approaches in chemical and molecular contexts.",
+    "url": "/resources/bayesian-composite-models-in-chemistry",
+    "image": "/assets/images/placeholder.png",
+    "date": "2025-10-05"
+  },
+  
+  {
+    "title": "Bayesian Methods in Evolutionary Biology (BEAST)",
+    "content": "Used widely in molecular evolution; tutorial resources available with BEAST software.",
+    "url": "/resources/bayesian-methods-in-evolutionary-biology-beast",
+    "image": "/assets/images/placeholder.png",
+    "date": "2025-10-05"
+  },
+  
+  {
+    "title": "BEAST / BEAST X",
+    "content": "Bayesian MCMC software for molecular phylogenetics, with tutorials.",
+    "url": "/resources/beast-beast-x",
+    "image": "/assets/images/placeholder.png",
+    "date": "2025-10-05"
+  },
+  
+  {
+    "title": "Doing Bayesian Data Analysis",
+    "content": "Tutorial style text bridging conceptual understanding and coding practice; includes R and JAGS examples.",
+    "url": "/resources/doing-bayesian-data-analysis",
+    "image": "/assets/images/placeholder.png",
+    "date": "2025-10-05"
+  },
+  
+  {
+    "title": "dynesty",
+    "content": "Nested sampling for posterior and evidence estimation; useful for multimodal or complex posteriors.",
+    "url": "/resources/dynesty",
+    "image": "/assets/images/placeholder.png",
+    "date": "2025-10-05"
+  },
+  
+  {
+    "title": "Flexible Bayesian Pharmacometric Modeling with Stan &amp; Torsten",
+    "content": "Demonstrates Bayesian modeling for drug dosing and PK/PD models in life sciences.",
+    "url": "/resources/flexible-bayesian-pharmacometric-modeling-with-stan-torsten",
+    "image": "/assets/images/placeholder.png",
+    "date": "2025-10-05"
+  },
+  
+  {
+    "title": "Introduction to Bayesian Statistics Applied to Life Sciences",
+    "content": "Covers conjugate priors, occupancy models, and JAGS; domain-centered for life sciences instructors.",
+    "url": "/resources/introduction-to-bayesian-statistics-applied-to-life-sciences",
+    "image": "/assets/images/placeholder.png",
+    "date": "2025-10-05"
+  },
+  
+  {
+    "title": "Introduction to Bayesian Statistics (Bolstad)",
+    "content": "Classic introduction covering conjugate priors, MCMC, and regression.",
+    "url": "/resources/introduction-to-bayesian-statistics-bolstad",
+    "image": "/assets/images/placeholder.png",
+    "date": "2025-10-05"
+  },
+  
+  {
+    "title": "JASP",
+    "content": "Open-source, user-friendly software for Bayesian and frequentist statistical analysis. GUI-based, great for instructors and students without coding experience.",
+    "url": "/resources/jasp",
+    "image": "/assets/images/placeholder.png",
+    "date": "2025-10-05"
+  },
+  
+  {
+    "title": "Neuromatch Tutorial 2: Bayesian Inference and Decisions",
+    "content": "Interactive notebook teaching continuous hidden-state Bayesian inference and decision theory.",
+    "url": "/resources/neuromatch-tutorial-2-bayesian-inference-and-decisions",
+    "image": "/assets/images/placeholder.png",
+    "date": "2025-10-05"
+  },
+  
+  {
+    "title": "OpenBUGS",
+    "content": "Classic Bayesian modeling via Gibbs sampling; many legacy models and interoperability.",
+    "url": "/resources/openbugs",
+    "image": "/assets/images/placeholder.png",
+    "date": "2025-10-05"
+  },
+  
+  {
+    "title": "Practical Bayesian Inference in Neuroscience",
+    "content": "Recent paper and open toolbox showing Bayesian inference in neuroscience; useful as a practical example.",
+    "url": "/resources/practical-bayesian-inference-in-neuroscience",
+    "image": "/assets/images/placeholder.png",
+    "date": "2025-10-05"
+  },
+  
+  {
+    "title": "STATS 331: Introduction to Bayesian Statistics (Lecture notes)",
+    "content": "Open course notes under CC-BY-SA; adaptable for instructors.",
+    "url": "/resources/stats-331-introduction-to-bayesian-statistics-lecture-notes",
+    "image": "/assets/images/placeholder.png",
+    "date": "2025-10-05"
+  },
+  
+  {
+    "title": "Think Bayes 2",
+    "content": "A gentle, computational introduction to Bayesian statistics using Python and Jupyter notebooks.",
+    "url": "/resources/think-bayes-2",
+    "image": "/assets/images/placeholder.png",
+    "date": "2025-10-05"
+  }
+  
+]
